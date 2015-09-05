@@ -36,7 +36,7 @@ void merge(int array[], int tmp_array[], int start, int center, int end)
 
 	while (lt < center)
 		tmp_array[kt++] = array[lt++];
-	while (rt < center)
+	while (rt < end)
 		tmp_array[kt++] = array[rt++];
 
 	/* copy back tmp_array to array */
