@@ -36,7 +36,7 @@ void merge(int array[], int tmp_array[], int start, int center, int end)
 
 	while (lt < center)
 		tmp_array[kt++] = array[lt++];
-	while (rt < center)
+	while (rt < end)
 		tmp_array[kt++] = array[rt++];
 
 	/* copy back tmp_array to array */
@@ -58,8 +58,8 @@ void merge_sort(int array[], int length)
 
 int main(void)
 {
-	int array[] = {5,4,3,2,1};
-	int length = 5;
+	int array[] = {5,4,3,2,1,6,8,3,9,10};
+	int length = sizeof(array) / sizeof(int);
 
 	print_array(array, length);
 	merge_sort(array, length);
